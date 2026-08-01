@@ -1,0 +1,338 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.portal{
+    min-height:100vh;
+    background:#f5f5f5;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#8B0000;
+}
+
+.logo{
+    color:white;
+    font-size: 40px;
+}
+
+.navbar ul{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+}
+
+.navbar a:hover{
+    color:gold;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    min-height:80vh;
+    background:url("../assets/picture1.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-text{
+    width:45%;
+    color:white;
+}
+
+.hero-text h2{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.hero-text button{
+    padding:15px 40px;
+    border:none;
+    border-radius:30px;
+    background:red;
+    color:white;
+    cursor:pointer;
+}
+
+.login-card{
+    width:350px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,.3);
+}
+
+.login-card h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#8B0000;
+}
+
+.login-card input{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:1px solid gray;
+}
+
+.login-card button{
+    width:100%;
+    padding:15px;
+    margin-top:10px;
+    background:#8B0000;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.login-card button:hover{
+    background:green;
+}
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:60px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+    text-align:center;
+}
+
+.card h3{
+    color:#8B0000;
+    margin-bottom:15px;
+}
+
+footer{
+    background:#8B0000;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.loll{
+    margin-top: 20px;
+    text-align: center;
+}
+.loll span{
+    color: #2563eb;
+    cursor: pointer;
+    font-weight: bold;
+}
+.loll span:hover{
+    text-decoration: underline;
+}
+/* ===========================
+   Tablet Devices
+=========================== */
+@media (max-width: 992px){
+
+    /* .navbar{
+        padding:20px 30px;
+    } */
+
+    .logo{
+        font-size:30px;
+    }
+
+    .navbar ul{
+        gap:20px;
+    }
+
+    .hero{
+        flex-direction:column;
+        justify-content:center;
+        text-align:center;
+        padding:60px 30px;
+        gap:40px;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .hero-text h2{
+        font-size:40px;
+    }
+
+    .hero-text p{
+        font-size:18px;
+    }
+
+    .login-card{
+        width:80%;
+        max-width:400px;
+    }
+
+    .features{
+        flex-wrap:wrap;
+        padding:40px 20px;
+    }
+
+    .card{
+        width:45%;
+    }
+}
+
+/* ===========================
+   Mobile Devices
+=========================== */
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        /* gap:20px; */
+        padding:20px;
+    }
+
+    .logo{
+        font-size:28px;
+        /* text-align:center; */
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        /* align-items:center; */
+        /* gap:15px; */
+    }
+/* 
+    .navbar a{
+        font-size:17px;
+    } */
+
+    .hero{
+        flex-direction:column;
+        padding:40px 20px;
+        min-height:auto;
+    }
+/* 
+    .hero-text{
+        width:100%;
+        text-align:center;
+    } */
+
+    /* .hero-text h2{
+        font-size:32px;
+    } */
+
+    /* .hero-text p{
+        font-size:17px;
+    } */
+
+    .hero-text button{
+        width:98%;
+    }
+
+    .login-card{
+        width:100%;
+    }
+
+    .login-card input,
+    .login-card button{
+        font-size:16px;
+    }
+
+    .features{
+        flex-direction:column;
+        align-items:center;
+        padding:40px 20px;
+    }
+
+    .card{
+        width:100%;
+        max-width:350px;
+    }
+
+    footer{
+        padding:15px;
+        font-size:17px;
+    }
+}
+
+/* ===========================
+   Small Phones
+=========================== */
+@media (max-width:480px){
+
+    .logo{
+        font-size:22px;
+    }
+
+    .hero{
+        padding:30px 15px;
+    }
+
+    .hero-text h2{
+        font-size:26px;
+    }
+
+    .hero-text p{
+        font-size:15px;
+    }
+
+    .hero-text button{
+        padding:12px;
+        font-size:15px;
+    }
+
+    .login-card{
+        padding:20px;
+    }
+
+    .login-card h2{
+        font-size:22px;
+    }
+
+    .login-card input{
+        padding:12px;
+    }
+
+    .login-card button{
+        padding:12px;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    .card h3{
+        font-size:20px;
+    }
+
+    .card p{
+        font-size:15px;
+    }
+
+    .loll{
+        font-size:14px;
+    }
+}
